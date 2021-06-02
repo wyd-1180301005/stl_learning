@@ -156,6 +156,7 @@ _INLINE_VAR constexpr bool _Is_any_of_v = // true if and only if _Ty is in _Type
 - 系统环境变量
   - 基本与set-环境变量一致:
   - 然而系统环境变量的值被系统保存,bat文件使用set只能暂时更改
+  - 使用setx命令可以永久改变系统环境变量,使得不同的bat文件可以共用
     - 命令:set \<variable-name\>=\<variable_value\>
     - 注意:该命令中的等号左右不能有空格
     - 访问set变量的两种方法
